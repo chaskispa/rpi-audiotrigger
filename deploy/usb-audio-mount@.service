@@ -1,0 +1,6 @@
+[Unit]
+Description=Mount USB %I
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/usb-audio-mount.sh /dev/%I

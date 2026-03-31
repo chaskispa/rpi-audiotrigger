@@ -1,0 +1,17 @@
+[Unit]
+Description=USB audio player
+After=multi-user.target sound.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/rpi-audiotrigger
+ExecStart=/home/pi/rpi-audiotrigger/.venv/bin/python -u /home/pi/rpi-audiotrigger/usb_playlist_trigger.py
+Restart=on-failure
+RestartSec=2
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
