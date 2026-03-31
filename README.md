@@ -67,7 +67,7 @@ Example:
 
 ```bash
 cd /home/pi
-git clone <your-repo-url> rpi-audiotrigger
+git clone https://github.com/chaskispa/rpi-audiotrigger.git rpi-audiotrigger
 cd rpi-audiotrigger
 ```
 
